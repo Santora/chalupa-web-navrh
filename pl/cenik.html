@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cennik i rezerwacja | Chata Pod Hřebenem</title>
+<meta name="description" content="Cennik pobytu w chacie w Beskidach, orientacyjna kalkulacja ceny i formularz zapytania. Minimalny pobyt 2 noce.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#2f4a3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a3a'/%3E%3Cpath d='M10 44 32 18l22 26z' fill='%23b5835a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#obsah">Przejdź do treści</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="index.html">Pod Hřebenem<small>chata · Beskidy</small></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Główne">
+    <a href="index.html">Start</a>
+    <a href="vybaveni.html">Wyposażenie</a>
+    <a href="galerie.html">Galeria</a>
+    <a href="okoli.html">Okolica</a>
+    <a href="cenik.html" aria-current="page">Cennik</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a class="btn" href="cenik.html#poptavka">Rezerwacja</a>
+    <span class="lang" role="group" aria-label="Język"><a href="../cenik.html" hreflang="cs" lang="cs">CS</a><a href="../en/cenik.html" hreflang="en" lang="en">EN</a><a href="../de/cenik.html" hreflang="de" lang="de">DE</a><a href="../pl/cenik.html" hreflang="pl" lang="pl" aria-current="true">PL</a><a href="../sk/cenik.html" hreflang="sk" lang="sk">SK</a></span>
+  </nav>
+</div></header>
+
+<main id="obsah">
+  <section class="page-head"><div class="wrap">
+    <p class="eyebrow">Cennik i rezerwacja</p>
+    <h1>Ile kosztuje pobyt</h1>
+    <p class="lead">Cena dotyczy całej chaty za noc, nie za osobę.</p>
+  </div></section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="hint">Wszystkie ceny są przykładowe. Prawdziwe uzupełni właściciel, trzeba też zmienić stałe w <code>main.js</code>.</div>
+      <table>
+        <thead><tr><th>Okres</th><th>Cena za noc (cała chata)</th><th>Uwaga</th></tr></thead>
+        <tbody>
+          <tr><td>Poza sezonem</td><td>4 500 Kč</td><td>Kwiecień–czerwiec, wrzesień–listopad</td></tr>
+          <tr><td>Wysoki sezon</td><td>6 500 Kč</td><td>Grudzień–marzec, lipiec–sierpień</td></tr>
+          <tr><td>Sylwester / święta</td><td>[Uzupełnić]</td><td>Min. pobyt [uzupełnić] nocy</td></tr>
+          <tr><td>Sprzątanie końcowe</td><td>1 500 Kč</td><td>Jednorazowo</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:12px">Minimalny pobyt 2 noce. Kaucja, warunki anulowania i płatność: [uzupełnić].</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="poptavka">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Rezerwacja</p>
+        <h2>Wyślij zapytanie</h2>
+        <p class="lead">Wpisz termin i dane. Otworzy się e-mail z gotową wiadomością. Wolny termin potwierdzimy w ciągu jednego dnia roboczego.</p>
+        <div class="calendar-ph">[Placeholder – tu można wstawić kalendarz zajętości, np. z iCal / Kalendarza Google]</div>
+      </div>
+      <form id="inquiry" novalidate>
+        <div class="row2">
+          <label>Przyjazd <input type="date" name="from" required></label>
+          <label>Wyjazd <input type="date" name="to" required></label>
+        </div>
+        <label>Liczba osób
+          <select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select>
+        </label>
+        <div class="estimate" id="estimate" aria-live="polite">Wybierz termin, a pokażemy orientacyjną cenę.</div>
+        <label>Imię i nazwisko <input type="text" name="name" autocomplete="name" required></label>
+        <label>Telefon <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Wiadomość <textarea name="message" rows="4" placeholder="Np. przyjęcie, pies, pytanie o wellness…"></textarea></label>
+        <button class="btn" type="submit">Wyślij zapytanie</button>
+        <p class="note">Po wysłaniu otworzy się Twój program pocztowy. Nigdzie nie zapisujemy danych.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="foot">
+    <div><h3>Chata Pod Hřebenem</h3><p>Bílá, kraj morawsko-śląski<br>[Uzupełnić: dokładny adres]</p></div>
+    <div><h3>Menu</h3><ul><li><a href="vybaveni.html">Wyposażenie</a></li><li><a href="galerie.html">Galeria</a></li><li><a href="okoli.html">Okolica</a></li><li><a href="cenik.html">Cennik</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+    <div><h3>Kontakt</h3><ul><li><a href="tel:+420000000000">+420 000 000 000</a></li><li><a href="mailto:info@example.cz">info@example.cz</a></li><li><a href="#">Regulamin (PDF)</a></li></ul></div>
+  </div>
+  <p class="copy">© Chata Pod Hřebenem – wersja robocza, treść jest przykładowa.</p>
+</div></footer>
+<script src="../main.js"></script>
+</body>
+</html>

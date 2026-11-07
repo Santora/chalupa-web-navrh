@@ -142,3 +142,9 @@ details p{margin:.8em 0 0;color:var(--muted)}
   .gallery .wide{grid-column:span 2}
   .section{padding:52px 0}
 }
+
+/* language switcher */
+.lang{display:flex;gap:2px;margin-left:10px}
+.lang a{padding:6px 8px;font-size:.78rem;font-weight:700;border-radius:8px;letter-spacing:.04em}
+.lang a[aria-current="true"]{background:var(--forest);color:#fff}
+@media (max-width:860px){.lang{margin:10px 0 0;flex-wrap:wrap}.lang a{background:var(--cream)}}

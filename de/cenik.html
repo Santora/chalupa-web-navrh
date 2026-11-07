@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preise und Buchung | Hütte Pod Hřebenem</title>
+<meta name="description" content="Preise für einen Aufenthalt in der Hütte in den Beskiden, Preisrechner und Anfrageformular. Mindestaufenthalt 2 Nächte.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#2f4a3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a3a'/%3E%3Cpath d='M10 44 32 18l22 26z' fill='%23b5835a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#obsah">Zum Inhalt springen</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="index.html">Pod Hřebenem<small>Berghütte · Beskiden</small></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menü</button>
+  <nav class="nav" id="nav" aria-label="Hauptmenü">
+    <a href="index.html">Start</a>
+    <a href="vybaveni.html">Ausstattung</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="okoli.html">Umgebung</a>
+    <a href="cenik.html" aria-current="page">Preise</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a class="btn" href="cenik.html#poptavka">Anfragen</a>
+    <span class="lang" role="group" aria-label="Sprache"><a href="../cenik.html" hreflang="cs" lang="cs">CS</a><a href="../en/cenik.html" hreflang="en" lang="en">EN</a><a href="../de/cenik.html" hreflang="de" lang="de" aria-current="true">DE</a><a href="../pl/cenik.html" hreflang="pl" lang="pl">PL</a><a href="../sk/cenik.html" hreflang="sk" lang="sk">SK</a></span>
+  </nav>
+</div></header>
+
+<main id="obsah">
+  <section class="page-head"><div class="wrap">
+    <p class="eyebrow">Preise und Buchung</p>
+    <h1>Was ein Aufenthalt kostet</h1>
+    <p class="lead">Der Preis gilt pro Nacht für die ganze Hütte, nicht pro Person.</p>
+  </div></section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="hint">Alle Preise sind Beispiele. Die echten trägt der Eigentümer ein, ebenso müssen die Konstanten in <code>main.js</code> angepasst werden.</div>
+      <table>
+        <thead><tr><th>Zeitraum</th><th>Preis pro Nacht (ganze Hütte)</th><th>Hinweis</th></tr></thead>
+        <tbody>
+          <tr><td>Nebensaison</td><td>4.500 CZK</td><td>April–Juni, September–November</td></tr>
+          <tr><td>Hochsaison</td><td>6.500 CZK</td><td>Dezember–März, Juli–August</td></tr>
+          <tr><td>Silvester / Feiertage</td><td>[Ergänzen]</td><td>Mindestaufenthalt [ergänzen] Nächte</td></tr>
+          <tr><td>Endreinigung</td><td>1.500 CZK</td><td>Einmalig</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:12px">Mindestaufenthalt 2 Nächte. Kaution, Stornobedingungen und Zahlung: [ergänzen].</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="poptavka">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Buchung</p>
+        <h2>Anfrage senden</h2>
+        <p class="lead">Tragen Sie Termin und Angaben ein. Es öffnet sich eine E-Mail mit vorausgefüllter Nachricht. Den freien Termin bestätigen wir innerhalb eines Werktags.</p>
+        <div class="calendar-ph">[Platzhalter – hier kann ein Belegungskalender eingebettet werden, z. B. aus iCal / Google Kalender]</div>
+      </div>
+      <form id="inquiry" novalidate>
+        <div class="row2">
+          <label>Anreise <input type="date" name="from" required></label>
+          <label>Abreise <input type="date" name="to" required></label>
+        </div>
+        <label>Anzahl Personen
+          <select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select>
+        </label>
+        <div class="estimate" id="estimate" aria-live="polite">Wählen Sie einen Zeitraum, um den ungefähren Preis zu sehen.</div>
+        <label>Vor- und Nachname <input type="text" name="name" autocomplete="name" required></label>
+        <label>Telefon <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Nachricht <textarea name="message" rows="4" placeholder="z. B. Feier, Hund, Frage zum Wellnessbereich…"></textarea></label>
+        <button class="btn" type="submit">Anfrage senden</button>
+        <p class="note">Mit dem Absenden öffnet sich Ihr E-Mail-Programm. Wir speichern keine Daten.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="foot">
+    <div><h3>Hütte Pod Hřebenem</h3><p>Bílá, Mährisch-Schlesische Region<br>[Ergänzen: genaue Adresse]</p></div>
+    <div><h3>Menü</h3><ul><li><a href="vybaveni.html">Ausstattung</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="okoli.html">Umgebung</a></li><li><a href="cenik.html">Preise</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+    <div><h3>Kontakt</h3><ul><li><a href="tel:+420000000000">+420 000 000 000</a></li><li><a href="mailto:info@example.cz">info@example.cz</a></li><li><a href="#">Hausordnung (PDF)</a></li></ul></div>
+  </div>
+  <p class="copy">© Hütte Pod Hřebenem – Arbeitsentwurf, Inhalte sind Beispiele.</p>
+</div></footer>
+<script src="../main.js"></script>
+</body>
+</html>

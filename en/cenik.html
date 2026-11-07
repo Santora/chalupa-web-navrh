@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prices and booking | Pod Hřebenem Cottage</title>
+<meta name="description" content="Prices for a stay at the cottage in the Beskydy, an estimated price calculator and an inquiry form. Minimum stay 2 nights.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#2f4a3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a3a'/%3E%3Cpath d='M10 44 32 18l22 26z' fill='%23b5835a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#obsah">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="index.html">Pod Hřebenem<small>cottage · Beskydy</small></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="vybaveni.html">Amenities</a>
+    <a href="galerie.html">Gallery</a>
+    <a href="okoli.html">Surroundings</a>
+    <a href="cenik.html" aria-current="page">Prices</a>
+    <a href="kontakt.html">Contact</a>
+    <a class="btn" href="cenik.html#poptavka">Book now</a>
+    <span class="lang" role="group" aria-label="Language"><a href="../cenik.html" hreflang="cs" lang="cs">CS</a><a href="../en/cenik.html" hreflang="en" lang="en" aria-current="true">EN</a><a href="../de/cenik.html" hreflang="de" lang="de">DE</a><a href="../pl/cenik.html" hreflang="pl" lang="pl">PL</a><a href="../sk/cenik.html" hreflang="sk" lang="sk">SK</a></span>
+  </nav>
+</div></header>
+
+<main id="obsah">
+  <section class="page-head"><div class="wrap">
+    <p class="eyebrow">Prices and booking</p>
+    <h1>What a stay costs</h1>
+    <p class="lead">The price is per night for the whole cottage, not per person.</p>
+  </div></section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="hint">All prices are samples. The owner will add the real ones, and the constants in <code>main.js</code> must be updated as well.</div>
+      <table>
+        <thead><tr><th>Period</th><th>Price per night (whole cottage)</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Off-season</td><td>4,500 CZK</td><td>April–June, September–November</td></tr>
+          <tr><td>High season</td><td>6,500 CZK</td><td>December–March, July–August</td></tr>
+          <tr><td>New Year's Eve / holidays</td><td>[To add]</td><td>Min. stay [to add] nights</td></tr>
+          <tr><td>Final cleaning</td><td>1,500 CZK</td><td>One-off</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:12px">Minimum stay 2 nights. Deposit, cancellation terms and payment: [to add].</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="poptavka">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Booking</p>
+        <h2>Send an inquiry</h2>
+        <p class="lead">Fill in your dates and details. Your email program will open with a prepared message. We will confirm availability within one working day.</p>
+        <div class="calendar-ph">[Placeholder – an availability calendar can be embedded here, e.g. from iCal / Google Calendar]</div>
+      </div>
+      <form id="inquiry" novalidate>
+        <div class="row2">
+          <label>Arrival <input type="date" name="from" required></label>
+          <label>Departure <input type="date" name="to" required></label>
+        </div>
+        <label>Number of guests
+          <select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select>
+        </label>
+        <div class="estimate" id="estimate" aria-live="polite">Choose your dates to see an estimated price.</div>
+        <label>Full name <input type="text" name="name" autocomplete="name" required></label>
+        <label>Phone <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Message <textarea name="message" rows="4" placeholder="E.g. celebration, dog, question about the wellness…"></textarea></label>
+        <button class="btn" type="submit">Send an inquiry</button>
+        <p class="note">Submitting opens your email program. We do not store your data anywhere.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="foot">
+    <div><h3>Pod Hřebenem Cottage</h3><p>Bílá, Moravian-Silesian Region<br>[To add: exact address]</p></div>
+    <div><h3>Menu</h3><ul><li><a href="vybaveni.html">Amenities</a></li><li><a href="galerie.html">Gallery</a></li><li><a href="okoli.html">Surroundings</a></li><li><a href="cenik.html">Prices</a></li><li><a href="kontakt.html">Contact</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li><a href="tel:+420000000000">+420 000 000 000</a></li><li><a href="mailto:info@example.cz">info@example.cz</a></li><li><a href="#">House rules (PDF)</a></li></ul></div>
+  </div>
+  <p class="copy">© Pod Hřebenem Cottage – working draft, content is sample only.</p>
+</div></footer>
+<script src="../main.js"></script>
+</body>
+</html>

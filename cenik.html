@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ceník a rezervace | Chalupa Pod Hřebenem</title>
+<meta name="description" content="Ceník pobytu v chalupě v Beskydech, orientační kalkulace ceny a poptávkový formulář. Minimální pobyt 2 noci.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#2f4a3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a3a'/%3E%3Cpath d='M10 44 32 18l22 26z' fill='%23b5835a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#obsah">Přejít k obsahu</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="index.html">Pod Hřebenem<small>chalupa · Beskydy</small></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav" aria-label="Hlavní">
+    <a href="index.html">Úvod</a>
+    <a href="vybaveni.html">Vybavení</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="okoli.html">Okolí</a>
+    <a href="cenik.html" aria-current="page">Ceník</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a class="btn" href="cenik.html#poptavka">Rezervace</a>
+  </nav>
+</div></header>
+
+<main id="obsah">
+  <section class="page-head"><div class="wrap">
+    <p class="eyebrow">Ceník a rezervace</p>
+    <h1>Kolik pobyt stojí</h1>
+    <p class="lead">Cena je za celou chalupu a noc, ne za osobu.</p>
+  </div></section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="hint">Všechny ceny jsou ukázkové. Skutečné doplní majitel, stejně tak je třeba upravit konstanty v <code>main.js</code>.</div>
+      <table>
+        <thead><tr><th>Období</th><th>Cena za noc (celá chalupa)</th><th>Poznámka</th></tr></thead>
+        <tbody>
+          <tr><td>Mimo sezónu</td><td>4 500 Kč</td><td>Duben–červen, září–listopad</td></tr>
+          <tr><td>Vysoká sezóna</td><td>6 500 Kč</td><td>Prosinec–březen, červenec–srpen</td></tr>
+          <tr><td>Silvestr / svátky</td><td>[Doplnit]</td><td>Min. pobyt [doplnit] nocí</td></tr>
+          <tr><td>Závěrečný úklid</td><td>1 500 Kč</td><td>Jednorázově</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:12px">Minimální pobyt 2 noci. Kauce, storno podmínky a platba: [doplnit].</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="poptavka">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Rezervace</p>
+        <h2>Odešlete poptávku</h2>
+        <p class="lead">Vyplňte termín a údaje. Otevře se vám e-mail s předvyplněnou zprávou. Do jednoho pracovního dne potvrdíme volný termín.</p>
+        <div class="calendar-ph">[Placeholder – sem lze vložit kalendář obsazenosti, např. z iCal / Google Kalendáře]</div>
+      </div>
+      <form id="inquiry" novalidate>
+        <div class="row2">
+          <label>Příjezd <input type="date" name="from" required></label>
+          <label>Odjezd <input type="date" name="to" required></label>
+        </div>
+        <label>Počet osob
+          <select name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select>
+        </label>
+        <div class="estimate" id="estimate" aria-live="polite">Vyberte termín a zobrazí se orientační cena.</div>
+        <label>Jméno a příjmení <input type="text" name="name" autocomplete="name" required></label>
+        <label>Telefon <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Zpráva <textarea name="message" rows="4" placeholder="Např. oslava, pes, dotaz k wellness…"></textarea></label>
+        <button class="btn" type="submit">Odeslat poptávku</button>
+        <p class="note">Odesláním se otevře váš e-mailový program. Údaje nikam neukládáme.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div class="foot">
+    <div><h3>Chalupa Pod Hřebenem</h3><p>Bílá, Moravskoslezský kraj<br>[Doplnit přesnou adresu]</p></div>
+    <div><h3>Menu</h3><ul><li><a href="vybaveni.html">Vybavení</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="okoli.html">Okolí</a></li><li><a href="cenik.html">Ceník</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+    <div><h3>Kontakt</h3><ul><li><a href="tel:+420000000000">+420 000 000 000</a></li><li><a href="mailto:info@example.cz">info@example.cz</a></li><li><a href="#">Provozní řád (PDF)</a></li></ul></div>
+  </div>
+  <p class="copy">© Chalupa Pod Hřebenem – pracovní návrh, obsah je ukázkový.</p>
+</div></footer>
+<script src="main.js"></script>
+</body>
+</html>

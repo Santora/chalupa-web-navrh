@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Návrh je jen ke kontrole. Při ostrém nasazení změnit na "Allow: /"
+# a doplnit řádek: Sitemap: https://VASE-DOMENA/sitemap.xml
